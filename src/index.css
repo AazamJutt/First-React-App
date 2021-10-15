@@ -33,7 +33,11 @@
   margin: 40px auto;
   padding: 20px;
 }
-
+#addBlogBtn{
+  color: 'white';
+  background-color: rgb(114, 73, 167);
+  border-radius: 6px;
+}
 /* blog previews / list */
 .blog-preview {
   padding: 10px 16px;
@@ -47,4 +51,12 @@
   font-size: 20px;
   color: rgb(114, 73, 167);
   margin-bottom: 8px;
+}
+
+#deleteBtn{
+  color : white;
+  background-color: red;
+  margin: 20px;
+  padding: 10px;
+  border: 0px;
 }
