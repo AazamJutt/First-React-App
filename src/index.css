@@ -15,6 +15,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
+  display: inline-block;
   color: rgb(114, 73, 167);
 }
 .navbar .links {
@@ -22,6 +23,7 @@
 }
 .navbar a {
   margin-left: 16px;
+  color: black;
   text-decoration: none;
   padding: 6px;
 }
@@ -29,34 +31,45 @@
   color: rgb(114, 73, 167);
 }
 .content {
-  max-width: 600px;
+  max-width: 800px;
+  text-align: left;
   margin: 40px auto;
   padding: 20px;
 }
 #addBlogBtn{
-  color: 'white';
+  color: white;
   background-color: rgb(114, 73, 167);
   border-radius: 6px;
 }
 /* blog previews / list */
 .blog-preview {
-  padding: 10px 16px;
+  padding: 30px;
   margin: 20px 0;
   border-bottom: 3px solid #fafafa;
 }
 .blog-preview:hover {
   box-shadow: 12px 8px 30px rgba(0,0,0,0.1);
 }
+.blog-preview p{
+  display: block;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
 .blog-preview h2 {
+  padding: 20em auto;
+  display: inline-block;
   font-size: 20px;
+  font-style: ;
+  font-weight: bold;
   color: rgb(114, 73, 167);
-  margin-bottom: 8px;
 }
 
 #deleteBtn{
   color : white;
   background-color: red;
-  margin: 20px;
-  padding: 10px;
+  border-radius: 7px;
   border: 0px;
 }
