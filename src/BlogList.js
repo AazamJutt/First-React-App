@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
 
-const BlogList = ({blogs, title, handleDelete}) => {
+const BlogList = ({blogs, title}) => {
+    const history = useHistory();
+    const handleDelete = (id) =>{
+        fetch('http://localhost:8000/blogs/'+id ,{
+            method: 'DELETE'
+        }).then(() => {
+            history.push('/');
+        })
+    }
     return ( 
         <div className="blog-list">
             <h2>{title}</h2>
