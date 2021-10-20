@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 
 const Home = () => {
-    const {data,isLoading,error} = useFetch("http://localhost:8000/blogs")
+    const {data,isLoading,error} = useFetch("https://blogs--manager-app.herokuapp.com/api")
     return ( 
         <div className="home">
             {error && <div>{error}</div>}

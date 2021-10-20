@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 const BlogList = ({blogs, title}) => {
     const history = useHistory();
     const handleDelete = (id) =>{
-        fetch('http://localhost:8000/blogs/'+id ,{
+        fetch('https://blogs--manager-app.herokuapp.com/api/'+id ,{
             method: 'DELETE'
         }).then(() => {
             history.push('/');
