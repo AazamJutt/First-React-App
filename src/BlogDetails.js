@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
     const{ id } = useParams();
-    const { data, error, isLoading } =  useFetch("https://blogs--manager-app.herokuapp.com/api/blogs" + id);
+    const { data, error, isLoading } =  useFetch("https://blogs--manager-app.herokuapp.com/api/blogs/" + id);
     return ( 
         <div className="blog-details">
             { isLoading && <div>Loading...</div>}

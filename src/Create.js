@@ -14,7 +14,7 @@ const Create = () => {
         const blog = {title,body,author};
         setLoading(true);
 
-        fetch('https://blogs--manager-app.herokuapp.com/api/blogs', {
+        fetch('https://blogs--manager-app.herokuapp.com/api/blogs/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(blog)
